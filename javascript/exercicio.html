@@ -1,0 +1,63 @@
+<head>
+	<title>Post</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		img {
+			width: 100;
+			height: 80;
+		}
+		div{
+			font-size: 18px;
+		}
+		li {
+			list-style: none;
+			background-color: silver;
+		}
+	</style>
+	<script type="text/javascript">
+		i=0;
+
+ 		var incrementa = function(){
+ 			i++;
+ 			document.querySelectorAll(".js-incrementa")[0].innerHTML= i;
+ 		}
+
+ 		var comentar = function(){
+ 			var comentario = window.document.getElementById('comentario').value;
+ 			window.document.getElementById('comentario').value = "";
+	 		var node = document.createElement("li");
+	 		node.innerHTML = comentario; 
+ 			console.log(node);
+ 			document.querySelectorAll(".js-comenta")[0].appendChild(node); 
+		} 
+	</script>
+</head>
+<body>
+	<table>
+		<td> <img src="dug.jpg" alt="CSS3">  </td>
+		<td> <h2>Dug</h2> </td>
+	</table>
+	<table>
+		<tr>
+			<td><div> Eu me escondi debaixo da sua varanda porque te amo. </div></td>
+		</tr>		
+			<td>
+				<br>
+				<span class="js-incrementa">0</span> people like this <button id="curtiu" onClick="incrementa()">Like</button>
+			</td>
+		<tr>
+				<td><br>Comentários</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+ 				<ul class="js-comenta"> </ul>
+ 			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<td><textarea id="comentario"></textarea></td>
+			<td><button id="comentou" onClick="comentar()">Comentar</button></td>	
+		</tr>
+	</table>
+</body>
