@@ -1,0 +1,85 @@
+<head>
+	<meta charset="UTF-8">
+	<title>Jogo dos Quadrados</title>
+	<style type="text/css">
+			
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+
+var troca = function(img){
+	teste = img;
+	if(img.src.indexOf('h0.gif') > 0){
+		img.src="h1.gif";
+	}else if(img.src.indexOf('v0.gif') > 0){
+		img.src="v1.gif";
+	}
+	console.log(img.src.indexOf('h0.gif'));
+	
+};
+
+
+</script>
+
+	<h1>Jogo dos Quadrados</h1>
+
+	<table border="0">
+		<tr>
+			<td><img src="d.gif" ></td> 
+			<td><img src="h0.gif" onclick='troca(this)' ></td> 
+			<td><img src="d.gif" ></td> 
+			<td><img src="h0.gif" onclick='troca(this)'></td> 
+			<td><img src="d.gif" ></td> 
+			<td><img src="h0.gif" onclick='troca(this)'></td> 
+			<td><img src="d.gif" ></td> 
+			<td><img src="h0.gif" onclick='troca(this)'></td>
+			<td><img src="d.gif" ></td>
+		</tr>
+		<tr>
+			<td><img src="v0.gif" onclick='troca(this)'></td> 
+			<td><img src="p0.gif" ></td> 
+			<td><img src="v0.gif" onclick='troca(this)'></td> 
+			<td><img src="p0.gif" ></td> 
+			<td><img src="v0.gif" onclick='troca(this)'></td> 
+			<td><img src="p0.gif" ></td> 
+			<td><img src="v0.gif" onclick='troca(this)'></td> 
+			<td><img src="p0.gif" ></td>
+			<td><img src="v0.gif" onclick='troca(this)'></td>
+		</tr>
+		<tr>
+			<td><img src="d.gif" ></td> 
+			<td><img src="h0.gif" onclick='troca(this)'></td> 
+			<td><img src="d.gif" ></td> 
+			<td><img src="h0.gif" onclick='troca(this)'></td> 
+			<td><img src="d.gif"></td> 
+			<td><img src="h0.gif" onclick='troca(this)'></td> 
+			<td><img src="d.gif"></td> 
+			<td><img src="h0.gif" onclick='troca(this)'></td> 
+			<td><img src="d.gif"></td>
+		</tr>
+		<tr>
+			<td><img src="v0.gif" onclick='troca(this)'></td> 
+			<td><img src="p0.gif" ></td> 
+			<td><img src="v0.gif" onclick='troca(this)'></td> 
+			<td><img src="p0.gif" ></td> 
+			<td><img src="v0.gif" onclick='troca(this)'></td> 
+			<td><img src="p0.gif" ></td> 
+			<td><img src="v0.gif" onclick='troca(this)'></td> 
+			<td><img src="p0.gif" ></td>
+			<td><img src="v0.gif" onclick='troca(this)'></td>
+		</tr>
+		<tr>
+			<td><img src="d.gif" ></td> 
+			<td><img src="h0.gif" onclick='troca(this)'></td> 
+			<td><img src="d.gif" ></td> 
+			<td><img src="h0.gif" onclick='troca(this)'></td> 
+			<td><img src="d.gif"></td> 
+			<td><img src="h0.gif" onclick='troca(this)'></td> 
+			<td><img src="d.gif"></td> 
+			<td><img src="h0.gif" onclick='troca(this)'></td> 
+			<td><img src="d.gif"></td>
+		</tr>
+	</table>
+
+</body>
